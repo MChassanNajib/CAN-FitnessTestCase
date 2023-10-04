@@ -462,6 +462,8 @@ body {
     border-radius: 15px;
 }
 
+
+
 .member-list .member-profile {
     margin-top: -10px;
     display: flex;
@@ -569,8 +571,11 @@ footer .footer .footer-image {
     margin-bottom: 2rem;
 }
 
-.footer ul li {
+.footer ul li a{
     font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    
 }
 
 .footer .footer-line {
