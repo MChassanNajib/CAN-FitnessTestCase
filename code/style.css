@@ -196,7 +196,7 @@ body {
 }
 
 
-.fitur {
+.fiturcan {
     margin-top: 18px;
     width: 100%;
     height: 86px;
@@ -207,23 +207,34 @@ body {
     background-color: #1391AD;
 }
 
-.fitur li {
-    font-size: 32px;
-    font-weight: 500;
-    font-style: italic;
-    color: white;
-    padding-left: -12rem;
-    padding-right: -12rem;
+.fitur {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.contact {
+.fitur li {
+    font-size: 24px;
+    font-weight: 500;
+    list-style: none;
+    font-style: italic;
+    color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.about {
     color: #000;
     position: relative;
     width: 100%;
     margin: 5rem 0;
 }
 
-.contact .contact-img {
+.about .about-img {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -55%);
@@ -231,7 +242,7 @@ body {
     height: 430px;
 }
 
-.contact .contact-img img {
+.about .about-img img {
     display: block;
     width: 100%;
     height: 100%;
@@ -240,7 +251,7 @@ body {
     margin-top: -5rem;
 }
 
-.contact .contact-img .icon {
+.about .about-img .icon {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -251,7 +262,7 @@ body {
     align-items: center;
 }
 
-.contact .contact-description {
+.about .about-description {
     width: 100%;
     padding: 7rem 5.7rem;
     display: flex;
@@ -261,19 +272,19 @@ body {
     background-color: rgba(19, 145, 173, 0.25);
 }
 
-.contact .contact-description .contact-text {
-    width: 55%;
+.about .about-description .about-text {
+    width: 685px;
     margin-top: 9rem;
 }
 
-.contact .contact-description .contact-text h1 {
-    font-size: 4rem;
+.about .about-description .about-text h1 {
+    font-size: 48px;
     font-weight: 600;
     margin-bottom: 1rem;
     letter-spacing: 1px;
 }
 
-.contact .contact-description .contact-text p {
+.about .about-description .about-text p {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 1.7rem;
@@ -281,7 +292,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-.contact .contact-description .contact-text button {
+.about .about-description .about-text button {
     padding: 1.2rem 2rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -295,7 +306,7 @@ body {
     transition: 2s;
 }
 
-.contact .contact-data {
+.about .about-data {
     width: 27%;
     height: 100%;
     margin-top: 10rem;
@@ -305,7 +316,7 @@ body {
     color: #000;
 }
 
-.contact-data h2 {
+.about-data h2 {
     font-family: 'PT Serif', serif;
     font-size: 32px;
     font-weight: 700;
@@ -314,20 +325,20 @@ body {
     color: black;
 }
 
-.contact-data .contact-list .contact-item {
+.about-data .about-list .about-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 1.7rem;
 }
 
-.contact-data .contact-list .contact-item .contact-icon {
+.about-data .about-list .about-item .about-icon {
     font-size: 50px;
     margin-right: 1.5rem;
     color: #000;
 }
 
 
-.contact-item div h3 {
+.about-item div h3 {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
@@ -335,7 +346,7 @@ body {
     color: black;
 }
 
-.contact-item div p {
+.about-item div p {
     width: 100%;
     font-size: 0.9rem;
     font-weight: 500;
@@ -343,13 +354,6 @@ body {
     color: black;
 }
 
-.contact-item .email p {
-    width: 100%v ;
-    font-size: 0.9rem;
-    font-weight: 500;
-    letter-spacing: 0.7px;
-    color: black;
-}
 
 
 
@@ -435,7 +439,7 @@ body {
 }
 
 .review h2 {
-    font-size: 4rem;
+    font-size: 48px;
     font-weight: 600;
     margin-bottom: 5rem;
 }
@@ -583,23 +587,215 @@ footer .footer .footer-image {
 
 
 @media (max-width: 1350px) {
-    .contact-data h2 {
-        font-size: 24px;
-      }
-    
-      .contact-data .contact-list .contact-item div h3 {
-        font-size: 0.8rem;
-      }
-    
-      .contact-data .contact-list .contact-item div p {
-        font-size: 0.7rem;
+
+    .about .about-description {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25rem;
+        background-color: rgba(19, 145, 173, 0.25);
+    }
+
+    .about .about-description .about-data {
+        width: 350px;
+        height: auto;
+        margin-top: 50px;
+        padding: 3rem 1rem;
+        background-color: white;
+        border-radius: 24px;
+        color: #000;
+    }
+    
+
+    .about .about-description .about-text {
+        margin-top: 50px;
+        margin-right: 70px;
+        width: 500px;
+    }
+
+    .about .about-description .about-text h1 {
+        font-size: 38px;
+        width: 100%;
+    }
+
+    .about .about-description .about-text p {
+        display: block;
+        font-size: 16px;
+    }
+
+    .about .about-description .about-text button {
+        display: block;
+    }
+
+    .trainer .trainer-wrapper {
+        display: block;
+        margin-bottom: 7rem;
+        margin-top: 7rem;
+        flex-direction: column;
+    }
+
+    .trainer-wrapper .trainer-image {
+        width: 500px;
+        height: auto;
+        margin-bottom: 2rem;
+        margin: 0 auto;
+    }
+
+    .trainer-wrapper .trainer-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .trainer-wrapper .trainer-text h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 38px;
+    }
+
+    .review .review-member {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
       }
 
-      .contact-item div p {
+      .review .review-member .member-list {
+        margin-top: 20px;
+        width: 400px;
+        height: auto;
+        padding: 2rem;
+      }
+    .review h2 {
+        font-size: 38px;
+    }
+
+    .trainer-wrapper .trainer-text p {
+        font-size: 16px;
+    }
+
+    .trainer-list .trainer-item h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    .trainer .trainer-list {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .about .about-img img {
+        display: block;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 40px;
+        margin-top: -5rem;
+    }
+
+    .about .about-img .icon img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .about-description .about-text {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .about .about-description .about-text h1 {
+        font-size: 38px;
+        width: 100%;
+    }
+
+    .about .about-description .about-text p {
+        display: block;
+        font-size: 18px;
+    }
+    .home .home-text h2{
+        font-size: 38px;
+        width: 100%;
+    }
+    .home .home-text p{
+        font-size: 18px;
+        width: 100%;
+        margin-bottom: 0;
+        line-height: normal;
+        margin-top: 10px;
+    }
+
+    .about .about-description .about-data {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        padding: 3rem 1rem;
+        background-color: white;
+        border-radius: 24px;
+        color: #000;
+    }
+    .about .about-description .about-text button {
+        display: block;
+    }
+
+    .about-data h2 {
+        font-weight: 500;
+        font-size: 28px;
+      }
+    
+      .about-data .about-list .about-item div h3 {
+        font-size: 20px;
+      }
+      .about-data .about-list .about-item div  {
         width: 100%;
       }
     
+      .about-data .about-list .about-item div p {
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+      }
+
+      .about-item div p {
+        width: 50%;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+      .fitur li {
+        list-style: none;
+        padding-top: 0px;
+        font-size: 20px;
+
+    }
+    .fitur{
+        margin-bottom: 0;
+    }
+
+    .fiturcan{
+        height: auto;
+        margin: 0;
+    }
 
     .trainer .trainer-list {
         flex-wrap: wrap;
@@ -613,9 +809,6 @@ footer .footer .footer-image {
         flex-wrap: wrap;
       }
     
-      .review .review-member .member-list {
-        width: 50%;
-      }
 
     .navbar :is(.hamburger-btn, .close-btn) {
         display: block;
@@ -625,10 +818,18 @@ footer .footer .footer-image {
         padding: 15px 20px;
     }
 
-    .navbar .logo img {
+    .navbar .logo {
         display: flex;
-        text-align: center;
-    }
+        align-items: center;
+        
+        margin: 0 auto;
+      }
+    
+      .navbar .logo img {
+        margin: 0 auto;
+        width: 180px;
+        height: 47px;
+      }
 
     .navbar .logo h2 {
         text-align: center;
@@ -668,64 +869,202 @@ footer .footer .footer-image {
         font-size: 0.9rem;
         padding: 7px 10px;
     }
+
+
+
+    footer .footer-header {
+        height: 94px;
+        display: flex;
+        flex-direction: row;
+        background-color: #1AB9BF;
+        padding: 10px auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer .footer-header h2 {
+        font-size: 38px;
+        font-family: 'PT Serif', serif;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .footer ul {
+        width: 700px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    
+    .footer ul li {
+        font-size: 14px;
+    }
+
+    footer .footer-header button {
+        width: 100px;
+        height: 45px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        background-color: #F4CD00;
+    }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 760px) {
-    .navbar .logo img{
-        width: 100px;
-        height: auto;
+    .review h2 {
+        font-size: 30px;
     }
+    .navbar .logo {
+        display: flex;
+        align-items: center;
+        
+        margin: 0 auto;
+      }
+    
+      .navbar .logo img {
+        margin: 0 auto;
+        width: 150px;
+        height: 30px;
+      }
     .home{
-        padding: 100px 2rem;
+        padding: 70px 2rem;
     }
     .home .home-text h2{
-        font-size: 26px;
+        font-size: 30px;
         width: 100%;
     }
     .home .home-text p{
         font-size: 16px;
         width: 100%;
+        margin-bottom: 0;
         line-height: normal;
         margin-top: 10px;
     }
 
-    .fitur {
-        padding: 0;
+    @media (max-width: 760px) {
+        .fitur li {
+            width: 50%;
+            list-style: none;
+            padding-top: 20px;
+            font-size: 16px;
+
+        }
+        .fiturcan{
+            height: auto;
+            margin: 0;
+        }
+    }
+
+    .about .about-description {
         width: 100%;
-        height: 86px;
+        padding: 3rem 2rem;
         display: flex;
         justify-content: space-between;
-        list-style: none;
-        background-color: #1391AD;
+        align-items: center;
+        margin-top: 25rem;
+        background-color: rgba(19, 145, 173, 0.25);
+        flex-direction: column;
+    }
+
+    .about .about-description .about-data {
+        width: 100%;
+        height: 100%;
+        margin-top: 50px;
+        padding: 3rem 1rem;
+        background-color: white;
+        border-radius: 24px;
+        color: #000;
     }
     
-    .fitur li {
-        font-size: 32px;
-        font-weight: 500;
-        font-style: italic;
-        color: white;
-        padding-left: -12rem;
-        padding-right: -12rem;
+
+    .about .about-description .about-text {
+        margin-right: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .about .about-description .about-text h1 {
+        font-size: 30px;
+        width: 100%;
+    }
+
+    .about .about-description .about-text p {
+        display: block;
+        font-size: 16px;
+    }
+
+    .about .about-description .about-text button {
+        display: block;
+    }
+
+    
+    .about .about-img img {
+        display: block;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 40px;
+        margin-top: -5rem;
+    }
+
+    .about .about-img .icon img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .home .home-image img {
         width: 100%;
-        height: auto;
+        height: 200px;
     }
-    .contact-data h2 {
+    .about-data h2 {
+        font-weight: 500;
+        font-size: 28px;
+      }
+    
+      .about-data .about-list .about-item div h3 {
         font-size: 20px;
       }
-    
-      .contact-data .contact-list .contact-item div h3 {
-        font-size: 0.6rem;
+      .about-data .about-list .about-item div  {
+        width: 100%;
       }
     
-      .contact-data .contact-list .contact-item div p {
+      .about-data .about-list .about-item div p {
         width: 50%;
-        font-size: 0.5rem;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
       }
 
-      .contact-item div p {
+      .about-item div p {
         width: 50%;
       }
 
@@ -740,24 +1079,143 @@ footer .footer .footer-image {
     
 
 
-    .review .review-member {
+      .review {
         flex-direction: column;
       }
+    
+      .review .review-member {
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+    
+      .review .review-member .member-list {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+      }
+    
+      .member-list .member-profile {
+        margin-top: 0;
+      }
+    
+      .member-list .member-profile .member-image {
+        height: 64px;
+        width: 64px;
+        margin-right: 1rem;
+      }
+
+      .member-list .member-profile .member-name {
+        margin-left: 15px;
+      }
+    
+      .member-list .member-text p {
+        margin-top: 0;
+      }
+
+      .trainer {
+        padding: 0px 2rem;
+    }
+
+    .trainer .trainer-wrapper {
+        display: block;
+        margin-bottom: 7rem;
+        margin-top: 7rem;
+    }
+
+    .trainer-wrapper .trainer-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .trainer-wrapper .trainer-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .trainer-wrapper .trainer-text h2 {
+        font-size: 30px;
+    }
+
+    .trainer-wrapper .trainer-text p {
+        font-size: 16px;
+    }
 
     .trainer .trainer-list {
+        margin: 0 auto;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .trainer-list .trainer-item h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+
+    .trainer-list .trainer-item .item-image {
+        width: 100%;
+    }
+
+    .trainer-item .item-image img {
+        width: 100%;
+        object-fit: cover;
+        height: auto;
+    }
+
+    .trainer .trainer-list {
+        display: flex;
+    align-items: center;
+    justify-content: center;
         flex-direction: column;
       }
-    .form-popup {
-        width: 95%;
+
+
+    footer .footer-header {
+        height: 94px;
+        display: flex;
+        flex-direction: row;
+        background-color: #1AB9BF;
+        padding: 10px 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer .footer-header h2 {
+        font-size: 20px;
+        font-family: 'PT Serif', serif;
+        font-weight: 700;
+        margin: 0;
     }
 
-    .form-box .form-details {
-        display: none;
+    .footer ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    
+    .footer ul li {
+        font-size: 14px;
     }
 
-    .form-box .form-content {
-        padding: 30px 20px;
+    footer .footer-header button {
+        width: 100px;
+        height: 45px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        background-color: #F4CD00;
     }
+
+
 }
 
 @media (max-width: 560px) {
